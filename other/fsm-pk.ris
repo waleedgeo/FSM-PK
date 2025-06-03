@@ -1,0 +1,19 @@
+TY  - JOUR
+T1  - High-resolution flood susceptibility mapping and exposure assessment in Pakistan: An integrated artificial intelligence, machine learning and geospatial framework
+AU  - Waleed, Mirza
+AU  - Sajjad, Muhammad
+JO  - International Journal of Disaster Risk Reduction
+VL  - 121
+SP  - 105442
+PY  - 2025
+DA  - 2025/04/15/
+SN  - 2212-4209
+DO  - https://doi.org/10.1016/j.ijdrr.2025.105442
+UR  - https://www.sciencedirect.com/science/article/pii/S2212420925002663
+KW  - Floods
+KW  - Flood susceptibility mapping
+KW  - Machine learning
+KW  - Disaster risk management
+KW  - Pakistan
+AB  - Flood-related disasters have far-reaching impacts on infrastructure and societal well-being. Though characterizing flood susceptibilities using state-of-the-art approaches and modelling socio-economic exposure to highlight vulnerabilities is essential to assess and manage flood-associated risks, current studies are usually regional/coarser resolutions neglecting localized situations. Here we developed an integrated machine learning, artificial intelligence, and geospatial modelling-based framework for high-resolution flood susceptibility (30 m) and socio-economic exposure estimations at a larger scale using Pakistan as a case. To do so, the data on flooding, elevation, drainage, rainfall, Landsat-8 imagery, and gridded socio-economic layers were used. We produced the first national-scale high-resolution susceptibility maps for Pakistan, pinpointing areas at higher risk of flooding, and assessing the potential impact on the population and the economy. Our findings suggest that ∼29 % of the total area of Pakistan falls under critical flood susceptibility levels, with Sindh and Punjab being the most at-risk provinces. Notably, ∼95 million people (47 %) in Pakistan are exposed to high flood susceptibility with 74 % population of Sindh, 56 % of Punjab, and 33 % of Balochistan residing in high susceptibility areas. We further pinpoint economic hotspots in Sindh and upper Punjab as particularly vulnerable to flood risks, which calls for proactive disaster preparedness measures. Through the presented characterization of flood susceptibility and socio-economic exposure, our findings are useful to devise targeted interventions in highly exposed regions to enhance resilience and reduce the risks/impact of future floods. By addressing vulnerabilities and fostering resilience, Pakistan can effectively mitigate flood risks and safeguard its population and infrastructure.
+ER  - 
