@@ -1,0 +1,11 @@
+rioxarray>=0.15.0
+rasterio>=1.3.0
+matplotlib>=3.5.0
+numpy>=1.21.0
+pyproj>=3.4.0
+geopandas>=0.14.0
+geemap>=0.30.0
+earthengine-api>=0.1.350
+ipywidgets>=8.0.0
+jupyterlab>=4.0.0
+folium>=0.14.0

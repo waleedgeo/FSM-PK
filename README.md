@@ -1,84 +1,223 @@
-# [High Resolution Flood Susceptibility Mapping and Exposure Assessment in Pakistan](https://doi.org/10.1016/j.ijdrr.2025.105442)
+# High-resolution Flood Susceptibility Mapping and Exposure Assessment in Pakistan
 
-<div style="text-align: center;">
-  <a href="https://doi.org/10.1016/j.ijdrr.2025.105442">
-    <img src="img/cover.png" alt="image" width="700">
-  </a>
-</div>
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ijdrr.2025.105442-blue)](https://doi.org/10.1016/j.ijdrr.2025.105442)
+[![Zenodo](https://img.shields.io/badge/Data-Zenodo-blue)](https://doi.org/10.5281/zenodo.18513601)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Open Access](https://img.shields.io/badge/Open%20Access-Yes-success)](https://doi.org/10.1016/j.ijdrr.2025.105442)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![GEE App](https://img.shields.io/badge/GEE-Interactive%20App-green)](https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk)
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://doi.org/10.1016/j.ijdrr.2025.105442">
+        <img src="img/cover.png" alt="FSM Pakistan Cover" width="100%">
+      </a>
+    </td>
+    <td width="50%">
+      <img src="img/p2_fsm_pk_data_post.png" alt="FSM Pakistan Open Data" width="100%">
+    </td>
+  </tr>
+</table>
+
+---
+
+## Open Source Data Available
+
+The **high-resolution (30m) flood susceptibility maps for Pakistan** are now publicly available for download!
+
+| Download Option | Link | Format |
+|-----------------|------|--------|
+| **Zenodo Repository** | [doi.org/10.5281/zenodo.18513601](https://doi.org/10.5281/zenodo.18513601) | Cloud Optimized GeoTIFF |
+| **LGBM Model (Direct)** | [Download fsm_lgbm_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_lgbm_pakistan.tif?download=1) | GeoTIFF (~150 MB) |
+| **XGBoost Model (Direct)** | [Download fsm_xgboost_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_xgboost_pakistan.tif?download=1) | GeoTIFF (~150 MB) |
+| **Google Earth Engine** | See [GEE Assets](#google-earth-engine-assets) section | EE Asset |
+
+---
 
 ## Overview
 
-This repository contains the web-application, codes, and resources for the paper titled **"High-resolution flood susceptibility mapping and exposure assessment in Pakistan: An integrated artificial intelligence, machine learning and geospatial framework"**. If you find this work useful, please star this repository and consider citing our paper.
+This repository provides the **first national-scale, high-resolution (30m) flood susceptibility maps for Pakistan**, developed using an integrated artificial intelligence, machine learning, and geospatial framework.
 
-### Citation
+### Key Highlights
 
-```
-Waleed, M., & Sajjad, M. (2025). High-resolution flood susceptibility mapping and exposure assessment in Pakistan: An integrated artificial intelligence, machine learning and geospatial framework. International Journal of Disaster Risk Reduction, 121(10544), 2.
-```
-Export citation: [BibTeX](/other/fsm-pk.bib) | [RIS](/other/fsm-pk.ris)
-
-
-- **Paper DOI**: [https://doi.org/10.1016/j.ijdrr.2025.105442](https://doi.org/10.1016/j.ijdrr.2025.105442)
-- **Paper PDF**: [Download PDF](https://waleedgeo.com/papers/waleed2025_fsmpk.pdf)
+- **High-Resolution Mapping**: National-scale flood susceptibility maps at **30m spatial resolution**
+- **Best Performing Model**: LightGBM (LGBM) with **0.85 accuracy**
+- **Five Susceptibility Classes**: Very Low, Low, Moderate, High, Very High
+- **Cloud-Native Access**: Available as Cloud Optimized GeoTIFFs and Google Earth Engine assets
+- **Interactive Web App**: Explore data without coding via [GEE App](https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk)
 
 ---
 
-*NOTE: The curent version of the paper has an issue where figure 8 is duplicated with figure 5. The correct figure 8 will be updated soon in the paper. Meanwhile if you are interested, you can contact [me](#contact) for the correct figure.*
+## Publication
 
-## Web Applications
+**Waleed, M., & Sajjad, M. (2025).** *High-resolution flood susceptibility mapping and exposure assessment in Pakistan: An integrated artificial intelligence, machine learning and geospatial framework.* **International Journal of Disaster Risk Reduction**, 121, 105442.
 
-Interactive Google Earth Engine (GEE) applications is available to explore the flood susceptibility in Pakistan at various scales.
+| Resource | Link |
+|----------|------|
+| Paper DOI | [doi.org/10.1016/j.ijdrr.2025.105442](https://doi.org/10.1016/j.ijdrr.2025.105442) |
+| Paper PDF | [Download PDF](data/Waleed%20and%20Sajjad%20-%202025%20-%20High-resolution%20flood%20susceptibility%20mapping%20and%20exposure%20assessment%20in%20Pakistan%20An%20integrated%20arti.pdf) |
 
-[![image](/img/fsm-pk-app.png)](https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk)
-
-- **Access App**: [Flood Susceptibility Mapping Pakistan](https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk)
-- **Features**:
-  - Interactive map to visualize flood susceptibility for Pakistan
-  - See flood susceptibility for different provinces with their susceptibility levels
-  - Select province and district
-  - Visualize FSM for respective province and district with flood susceptibility levels
-
-Note: Here flood susceptibility levels are classified into 5 classes: **Very Low**, **Low**, **Moderate**, **High**, and **Very High**. The values are the area under each class in square kilometers shown as percentage of the total area of the province/district.
-
-- **Preview**:
-
-  ![FSM PK Demo](/other/fsm-pk-optimizedgif.gif)
-
-## Contact
-
-For any queries or collaboration opportunities, please contact:
-
-- **Mirza Waleed**
-  - **Email**: [waleedgeo@outlook.com](mailto:waleedgeo@outlook.com)
-  - **LinkedIn**: [linkedin.com/in/waleedgeo](https://www.linkedin.com/in/waleedgeo)
-  - **Website**: [waleedgeo.com](https://waleedgeo.com)
+> **Note**: Figure 8 has been corrected. See [Corrigendum DOI: 10.1016/j.ijdrr.2025.105842](https://doi.org/10.1016/j.ijdrr.2025.105842) (Published: November 14, 2025)
 
 ---
 
+## Interactive Notebooks
 
-### Dataset Availability
+We provide two Jupyter notebooks for working with the flood susceptibility data:
 
-- The input dataset used in this study are publicly available, and sources are mentioned within text (see Table 1).
+<table>
+  <tr>
+    <th>Notebook</th>
+    <th>Description</th>
+    <th>Launch</th>
+  </tr>
+  <tr>
+    <td><b><a href="notebooks/01_zenodo_cog_analysis.ipynb">01_zenodo_cog_analysis.ipynb</a></b></td>
+    <td>
+      <b>Cloud-Native COG Workflow</b><br>
+      Work with Zenodo-hosted Cloud Optimized GeoTIFFs directly without downloading. Demonstrates windowed reads for regional analysis (e.g., Karachi), visualization with custom colormaps, and efficient data extraction.
+    </td>
+    <td>
+      <a href="https://colab.research.google.com/github/waleedgeo/FSM-PK/blob/main/notebooks/01_zenodo_cog_analysis.ipynb">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b><a href="notebooks/02_gee_interactive_map.ipynb">02_gee_interactive_map.ipynb</a></b></td>
+    <td>
+      <b>Google Earth Engine Workflow</b><br>
+      Server-side processing using GEE Python API. Features interactive split-panel comparison with satellite imagery, spatial analysis, and area calculations using geemap.
+    </td>
+    <td>
+      <a href="https://colab.research.google.com/github/waleedgeo/FSM-PK/blob/main/notebooks/02_gee_interactive_map.ipynb">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+      </a>
+    </td>
+  </tr>
+</table>
 
-- The high resolution flood susceptibility dataset for Pakistan can be accessed through the [web application linked above](#web-applications). While the dataset is not available for download, it can be explored interactively through the application. However if you are interested to use this dataset for your research, please [reach me directly](mailto:waleedgeo@outlook.com).
+See [`docs/environment_setup.md`](docs/environment_setup.md) for setup instructions.
 
-## Additional Resources
+---
 
-- **Contributors**:
-  - [Dr. Muhammad Sajjad](https://scholar.google.com.hk/citations?user=iuXamUEAAAAJ&hl=en)
+## Data Access
+
+### Zenodo Repository (Cloud Optimized GeoTIFFs)
+
+The recommended method for downloading and analyzing data locally:
+
+- **DOI**: [10.5281/zenodo.18513601](https://doi.org/10.5281/zenodo.18513601)
+- **Format**: Cloud Optimized GeoTIFF (COG) - supports windowed reads without full download
+- **LGBM Model**: [fsm_lgbm_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_lgbm_pakistan.tif?download=1) (Best performing, 0.85 accuracy)
+- **XGBoost Model**: [fsm_xgboost_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_xgboost_pakistan.tif?download=1) (0.82 accuracy)
+
+### Google Earth Engine Assets
+
+For server-side processing without downloading:
+
+| Model | Asset ID |
+|-------|----------|
+| LGBM | `projects/waleedgeo/assets/fsm_pk_lgbm` |
+| XGBoost | `projects/waleedgeo/assets/fsm_pk_xgboost` |
+
+### Interactive Web Application
+
+<div align="center">
+  <a href="https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk">
+    <img src="img/fsm-pk-app.png" alt="FSM Pakistan App" width="600">
+  </a>
+  <br>
+  <strong><a href="https://waleedgeo-ee.projects.earthengine.app/view/fsm-pk">Launch FSM-PK Interactive App</a></strong>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="other/fsm-pk-optimizedgif.gif" alt="FSM PK Demo" width="600">
+</div>
+
+### Data Specifications
+
+| Property | Value |
+|----------|-------|
+| Spatial Resolution | 30 meters |
+| Coordinate System | EPSG:4326 (WGS84) |
+| Extent | Pakistan national boundary |
+| Value Range | 1-5 (Very Low to Very High) |
+| Data Type | Unsigned 8-bit integer |
+
+For detailed data access instructions, see [`data/README.md`](data/README.md).
+
+---
+
+## Repository Structure
+
+```
+FSM-PK/
+├── data/                    # Data documentation and paper PDF
+├── notebooks/               # Jupyter notebooks (COG & GEE workflows)
+├── codes/                   # GEE App source code
+├── docs/                    # Setup documentation
+├── img/                     # Images and figures
+├── other/                   # Citation files and demo GIF
+├── requirements.txt         # Python dependencies
+└── LICENSE                  # CC BY-NC-SA 4.0
+```
+
+---
+
+## Citation
+
+```bibtex
+@article{WALEED2025105442,
+  title = {High-resolution flood susceptibility mapping and exposure assessment in Pakistan: An integrated artificial intelligence, machine learning and geospatial framework},
+  journal = {International Journal of Disaster Risk Reduction},
+  volume = {121},
+  pages = {105442},
+  year = {2025},
+  doi = {https://doi.org/10.1016/j.ijdrr.2025.105442},
+  author = {Mirza Waleed and Muhammad Sajjad}
+}
+```
+
+**Export citation**: [BibTeX](other/fsm-pk.bib) | [RIS](other/fsm-pk.ris)
+
+---
+
+## Authors
+
+| | |
+|---|---|
+| **Mirza Waleed** | Primary Author |
+| Email | [waleedgeo@outlook.com](mailto:waleedgeo@outlook.com) |
+| LinkedIn | [linkedin.com/in/waleedgeo](https://www.linkedin.com/in/waleedgeo) |
+| Website | [waleedgeo.com](https://waleedgeo.com) |
+| | |
+| **Dr. Muhammad Sajjad** | Co-author |
+| Google Scholar | [Profile](https://scholar.google.com.hk/citations?user=iuXamUEAAAAJ&hl=en) |
 
 ---
 
 ## License
 
-This project is licensed under the **Creative Commons Attribution 4.0 International License**.
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
 
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
 ## Keywords
 
-`flood`, `Pakistan`, `flood susceptibility`, `floods`, `flood risk`, `Google Earth Engine`, `geospatial`, `remote sensing`, `GIS`
+`flood` · `Pakistan` · `flood susceptibility` · `machine learning` · `LGBM` · `XGBoost` · `Google Earth Engine` · `geospatial` · `remote sensing` · `disaster risk management`
 
 ---
+
+<div align="center">
+
+**If you find this work useful, please star this repository!**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=waleedgeo/FSM-PK&type=Date)](https://star-history.com/#waleedgeo/FSM-PK&Date)
+
+</div>
