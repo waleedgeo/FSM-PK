@@ -244,6 +244,4 @@ FSM-PK/
 
 **If you find this work useful, please star this repository!**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=waleedgeo/FSM-PK&type=Date)](https://star-history.com/#waleedgeo/FSM-PK&Date)
-
 </div>
