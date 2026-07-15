@@ -2,6 +2,7 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ijdrr.2025.105442-blue)](https://doi.org/10.1016/j.ijdrr.2025.105442)
 [![Zenodo](https://img.shields.io/badge/Data-Zenodo-blue)](https://doi.org/10.5281/zenodo.18513601)
+[![FCFs Zenodo](https://img.shields.io/badge/FCFs-Zenodo-blue)](https://doi.org/10.5281/zenodo.20200726)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Open Access](https://img.shields.io/badge/Open%20Access-Yes-success)](https://doi.org/10.1016/j.ijdrr.2025.105442)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -9,13 +10,16 @@
 
 <table>
   <tr>
-    <td width="50%">
+    <td width="33.33%" align="center">
       <a href="https://doi.org/10.1016/j.ijdrr.2025.105442">
-        <img src="img/cover.png" alt="FSM Pakistan Cover" width="100%">
+        <img src="img/cover.png" alt="FSM Pakistan Cover" height="260" style="width: auto; max-width: 100%;">
       </a>
     </td>
-    <td width="50%">
-      <img src="img/p2_fsm_pk_data_post.png" alt="FSM Pakistan Open Data" width="100%">
+    <td width="33.33%" align="center">
+      <img src="img/p2_fsm_pk_data_post.png" alt="FSM Pakistan Open Data" height="260" style="width: auto; max-width: 100%;">
+    </td>
+    <td width="33.33%" align="center">
+      <img src="img/p7_fcfs_datashare.png" alt="FSM Pakistan Flood Conditioning Raster Layers" height="260" style="width: auto; max-width: 100%;">
     </td>
   </tr>
 </table>
@@ -24,13 +28,14 @@
 
 ## Open Source Data Available
 
-The **high-resolution (30m) flood susceptibility maps for Pakistan** are now publicly available for download!
+The **high-resolution (30m) flood susceptibility maps for Pakistan** and the **flood conditioning raster layers** used in the associated research are publicly available for download.
 
 | Download Option | Link | Format |
 |-----------------|------|--------|
-| **Zenodo Repository** | [doi.org/10.5281/zenodo.18513601](https://doi.org/10.5281/zenodo.18513601) | Cloud Optimized GeoTIFF |
+| **Flood Susceptibility Maps** | [doi.org/10.5281/zenodo.18513601](https://doi.org/10.5281/zenodo.18513601) | Cloud Optimized GeoTIFF |
 | **LGBM Model (Direct)** | [Download fsm_lgbm_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_lgbm_pakistan.tif?download=1) | GeoTIFF (~150 MB) |
 | **XGBoost Model (Direct)** | [Download fsm_xgboost_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_xgboost_pakistan.tif?download=1) | GeoTIFF (~150 MB) |
+| **Flood Conditioning Rasters** | [doi.org/10.5281/zenodo.20200726](https://doi.org/10.5281/zenodo.20200726) | Cloud Optimized GeoTIFF |
 | **Google Earth Engine** | See [GEE Assets](#google-earth-engine-assets) section | EE Asset |
 
 ---
@@ -113,6 +118,24 @@ The recommended method for downloading and analyzing data locally:
 - **LGBM Model**: [fsm_lgbm_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_lgbm_pakistan.tif?download=1) (Best performing, 0.85 accuracy)
 - **XGBoost Model**: [fsm_xgboost_pakistan.tif](https://zenodo.org/records/18513602/files/fsm_xgboost_pakistan.tif?download=1) (0.82 accuracy)
 
+### Flood Conditioning Raster Layers Dataset
+
+The Zenodo dataset **High-Resolution (30 m) Flood Conditioning Raster Layers for Flood Susceptibility Modelling in Pakistan** provides the national-scale predictor layers used in the associated study.
+
+- **Zenodo DOI**: [10.5281/zenodo.20200726](https://doi.org/10.5281/zenodo.20200726)
+- **Citation**: Waleed, M. (2026). *High-Resolution (30 m) Flood Conditioning Raster Layers for Flood Susceptibility Modelling in Pakistan* [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.20200726
+- **Coverage**: Pakistan
+- **Resolution**: 30 metres
+- **CRS**: EPSG:3395, WGS 84 / World Mercator
+- **Format**: Cloud Optimized GeoTIFF
+- **Data type**: Unsigned 16-bit integer with 65535 reserved for NoData
+
+The collection contains 13 raster layers: 10 principal flood conditioning features used in the published LightGBM and XGBoost models, plus 3 supplementary layers for transparency, sensitivity analysis, and further research. The principal features are Aspect, Curvature, Distance to drainage, Distance to rivers, Distance to roads, Elevation, NDVI, Rainfall frequency above 10 mm, Slope, and Topographic Wetness Index.
+
+Supplementary layers include Rainfall frequency above 50 mm, Maximum rainfall intensity, and OpenStreetMap-derived water presence.
+
+For reproducibility, the dataset also includes scaled continuous rasters with metadata tags for reconstructing original values, and users should follow the preprocessing and modelling workflow described in the associated article when reproducing the published results.
+
 ### Google Earth Engine Assets
 
 For server-side processing without downloading:
@@ -179,6 +202,17 @@ FSM-PK/
   year = {2025},
   doi = {https://doi.org/10.1016/j.ijdrr.2025.105442},
   author = {Mirza Waleed and Muhammad Sajjad}
+}
+```
+
+```bibtex
+@dataset{WALEED202620200726,
+  title = {High-Resolution (30 m) Flood Conditioning Raster Layers for Flood Susceptibility Modelling in Pakistan},
+  author = {Waleed, Mirza},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.20200726},
+  url = {https://doi.org/10.5281/zenodo.20200726}
 }
 ```
 
