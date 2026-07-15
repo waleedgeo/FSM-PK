@@ -10,16 +10,8 @@
 
 <table>
   <tr>
-    <td width="33.33%" align="center">
-      <a href="https://doi.org/10.1016/j.ijdrr.2025.105442">
-        <img src="img/cover.png" alt="FSM Pakistan Cover" height="260" style="width: auto; max-width: 100%;">
-      </a>
-    </td>
-    <td width="33.33%" align="center">
-      <img src="img/p2_fsm_pk_data_post.png" alt="FSM Pakistan Open Data" height="260" style="width: auto; max-width: 100%;">
-    </td>
-    <td width="33.33%" align="center">
-      <img src="img/p7_fcfs_datashare.png" alt="FSM Pakistan Flood Conditioning Raster Layers" height="260" style="width: auto; max-width: 100%;">
+    <td align="center">
+      <img src="img/v-r1Artboard 3.webp" alt="FSM Pakistan Combined Overview" width="100%">
     </td>
   </tr>
 </table>
